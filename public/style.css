@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+.card{
+    width: 21rem;
+    height: 35rem;
+    background: #212121;
+    border-radius: .5rem;
+}
+.card .banner img{
+    width: 100%;
+    border-radius: .5rem .5rem 0 0;
+}
+.card .profile{
+    padding-inline: 1rem;
+}
+.card .profile .information{
+    display: flex;
+    justify-content: space-between;
+}
+.card .profile .information .avatar{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: relative;
+    bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212121;
+}
+.card .profile .information .avatar img{
+    width: 5.25rem;
+    border-radius: 50%;
+}
+.card .profile .information .badges{
+    width: 7.75rem;
+    height: 2.25rem;
+    background: #151515bb;
+    border-radius: .25rem;
+    margin-top: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .65rem 0 .5rem;
+}
+.card .profile .details{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 2rem;
+    background: #151515bb;
+    padding: 1rem .75rem;
+    border-radius: .25rem;
+    font-weight: 500;
+}
+.card .profile .details .tag{
+    opacity: .7;
+}
+.card .profile .details .horizontal{
+    width: 100%;
+    height: 1.5px;
+    background: #fff;
+    opacity: .1;
+    margin-block: .75rem;
+}
+.card .profile .details .section_title{
+    font-size: .75rem;
+    font-weight: 600;
+}
+.card .profile .details .about_me{
+    margin-bottom: .5rem;
+}
+.card .profile .details .about_me .about_me_data{
+    line-height: 1.1rem;
+}
+.card .profile .details .about_me p i,
+.card .profile .details .member .date{
+    opacity: .7;
+    font-size: .8rem;
+}
+.card .profile .connections .connection{
+    width: 100%;
+    height: 3.5rem;
+    position: relative;
+    bottom: .5rem;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: opacity 300ms;
+}
+.connection.github{
+    background: #0f0f0f;
+}
+.connection.instagram{
+    background: #cb9d80;
+}
+.connection:hover{
+    opacity: .6 ;
+}
